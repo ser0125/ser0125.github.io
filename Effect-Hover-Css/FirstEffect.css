@@ -1,0 +1,31 @@
+        .section1{
+            padding: 5em 2em;
+            background-color: olivedrab;
+        }
+        .section1 .glyphicon{
+            background: rgba(255,255,255,0.1);
+        }
+        .section1 .glyphicon::after{
+            content: '';
+            box-shadow: 0 0 0 4px #fff;
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           border-radius: 50%;
+           opacity: 0;
+           left: -7px;
+            top: -7px;
+            padding: 7px;
+            box-sizing: content-box;
+            transition: transform 0.2s, opacity 0.2s;
+            transform: scale(0.8); /*Lo pone pequeño para pasar al otro icono*/
+        }
+        .section1 .glyphicon:hover::after{
+            opacity: 1;
+            transform: scale(1);
+        }
+         .section1 .glyphicon:hover{
+            background: rgba(255,255,255,1);
+          
+        }
+        
