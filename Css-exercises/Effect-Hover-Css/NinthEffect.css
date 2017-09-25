@@ -1,0 +1,33 @@
+.section10{
+    padding: 5em 2em;
+    background-color: palegreen;
+}
+.section10 .glyphicon{
+transition: box-shadow 0.2s;
+}
+.section10 .glyphicon:hover{
+    box-shadow: 0 0 0 10px rgba(255,255,255,1);
+}
+.section10 .glyphicon:after{
+    box-shadow: 0 0 0 3px #fff;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1;
+    left: 0px;
+     top: 0px;
+     padding: 0px;
+     box-sizing: content-box;
+     width: 100%;
+     height: 100%;
+     transition: transform 0.2s, opacity 0.2s;;
+}
+.section10 .glyphicon:hover:after{
+ transform: scale(0.85); 
+    opacity: 1; 
+}
+
+.section10 .sectionb .glyphicon:hover{
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.5);
+}

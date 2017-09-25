@@ -1,0 +1,26 @@
+    .section7{
+            padding: 5em 2em;
+            background-color: skyblue;
+        }
+        .section7 .glyphicon{
+            box-shadow: 0 0 0 4px white;
+        }
+        .section7 .glyphicon:hover{
+        background: rgba(255,255,255,1);
+        color: skyblue;
+        }
+        .section7 .glyphicon:hover:before{
+            animation: spinAround 2s linear infinite;
+        }
+        .section7 .glyphicon:before{
+        display: block; /*Transform doesnt work with display inline*/
+        }
+
+        @keyframes spinAround {
+            from {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }

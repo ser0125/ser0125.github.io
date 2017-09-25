@@ -1,0 +1,33 @@
+      .section8{
+            padding: 5em 2em;
+            background-color: sienna;
+        }
+        .section8 .glyphicon{
+            box-shadow: 0 0 0 4px #fff;
+            z-index: 1;
+        }
+        .section8 .glyphicon:after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0;
+            left: -7px;
+             top: -7px;
+             padding: 7px;
+             box-sizing: content-box;
+             width: 100%;
+             height: 100%;
+        }
+        .section8 .glyphicon:hover:after {
+            opacity: 1;
+            box-shadow: 3px 3px 0 rgba(255,255,255,1);
+        }
+        .section8 .sectionb .glyphicon:hover:after {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        .section8 .sectionb .glyphicon:after {
+            box-shadow: 3px 3px rgba(255,255,255,1);
+            transform: rotate(-90deg);
+            transition: opacity 0.2s, transform 0.2s;
+        }
